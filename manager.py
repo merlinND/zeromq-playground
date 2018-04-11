@@ -11,7 +11,7 @@ context = zmq.Context()
 
 # Define the socket using the "Context"
 sock = context.socket(zmq.PUSH)
-sock.bind("tcp://127.0.0.1:5690")
+sock.bind("tcp://0.0.0.0:5690")
 
 id = 0
 
